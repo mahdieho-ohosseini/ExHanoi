@@ -64,12 +64,12 @@ function exHanoi_1(A, B, C, n) {
 else
 {
     exHanoi_1(A, B, C, n-1)
-    moves.push([B, C]);
+    moves.push([A, B]);
     hanoi(C,A,B,6*n-6);
     hanoi(B,A,C,6*n-3);
 
 }
-
+return
 
 }  
 
